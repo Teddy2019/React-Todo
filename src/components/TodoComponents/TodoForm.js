@@ -9,7 +9,7 @@ function TodoForm(props){
                placeholder="task"
                name="task" /> 
         <button type='submit'>Add Todo</button>
-        <button type='submit'>Clear Completed</button>
+        <button type='button'>Clear Completed</button>
         </form>
     )
 }
