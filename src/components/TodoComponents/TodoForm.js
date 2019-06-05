@@ -1,13 +1,13 @@
 import React from 'react';
 
-function TodoForm(prop){
+function TodoForm(props){
     return (
-        <form onSubmit={this.submitHandler}>
+        <form onSubmit={props.mySubmit}>
         <input type='text' 
-               value={this.state.task}
-               onChange={this.changeHandler}
+               value={props.myValue}
+               onChange={props.myChange}
                placeholder="task"
-               name="task"> </input>
+               name="task" /> 
         <button type='submit'>Add Todo</button>
         <button type='submit'>Clear Completed</button>
         </form>

@@ -3,19 +3,10 @@
 import React from 'react';
 import Todo from './Todo';
 
-const TodoLists = [
-    {
-      task: 'Organize Garage',
-      id: Date.now(),
-      completed: false
-    },
-    
-  ];
-
 function TodoList(props) {
     return (
         <div>
-        {TodoLists.map((TodoList)=>{ 
+        {props.myTodo.map((TodoList)=>{ 
         return <Todo TodoList ={TodoList.task} />} )}
         </div>
     )
