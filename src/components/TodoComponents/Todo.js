@@ -2,7 +2,9 @@ import React from 'react';
 
 function Todo(props){
     return (
-        <div>{props.Todolist.task}</div>
+        <div>
+        <div>{props.todoListt.task}</div>
+        </div>
     )
 }
 
