@@ -59,13 +59,21 @@ class App extends React.Component {
     this.setState({ todoLists: newtodoLists });
   };
 
+  deletcompleted = event => {
+    event.preventDefault();
+    const newtodoLists = this.state.todoLists.filter(
+      todo => {return todo.completed === false});
+
+    this.setState({ todoLists: newtodoLists })
+  }
+
   
   render() {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
         <TodoList myTodo={this.state.todoLists} toggleTask={this.toggleTask} />
-        <TodoForm mySubmit={this.submitHandler} myValue={this.state.task} myChange={this.changeHandler} />
+        <TodoForm mySubmit={this.submitHandler} myValue={this.state.task} myChange={this.changeHandler} deletcompleted={this.deletcompleted} />
       </div>
     );
   }
