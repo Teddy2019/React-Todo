@@ -9,9 +9,8 @@ function Todo(props){
 
     return (
         
-        <div className={`todo${props.todoList.completed ? "completed" : ""}`} onClick={clickHandler}>
+        <div className={`todo${props.todoList.completed ? " completed" : " "}`} onClick={clickHandler}>
           <p>{props.todoList.task}</p>
-          <p>{props.todoList.id}</p>
         </div>
         
     )
