@@ -3,13 +3,15 @@ import React from 'react';
 function TodoForm(props){
     return (
         <form onSubmit={props.mySubmit}>
-        <input type='text' 
-               value={props.myValue}
+         <input  
                onChange={props.myChange}
-               placeholder="task"
-               name="task" /> 
-        <button type='submit'>Add Todo</button>
-        <button type='button'>Clear Completed</button>
+               type='text'
+               name="task" 
+               value={props.myValue}
+               placeholder="...task"
+          /> 
+         <button type='submit'>Add Todo</button>
+         <button type='button'>Clear Completed</button>
         </form>
     )
 }
