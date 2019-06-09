@@ -1,0 +1,16 @@
+
+  
+   .completed {
+    background-color: #5f94a1;
+    text-decoration: line-through;
+  } 
+
+  .todo {
+    background-color: #366592;
+    width: 25%;
+    text-align: left;
+    border-radius: 10px;
+    margin: 4px 0;
+    padding: 2px;
+    color: aliceblue;
+  }

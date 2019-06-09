@@ -1,0 +1,22 @@
+body {
+    background-image: url(../src/img/baground.jpg)
+}
+
+h2 {
+    width: 25%;
+    margin-left: 37%;
+    text-align: center;
+    background: rgb(112, 148, 148);
+}
+
+form {
+    margin-left: 35%;
+}
+
+button {
+    background: rgb(112, 148, 148);
+}
+
+input {
+    background: bisque;
+}
